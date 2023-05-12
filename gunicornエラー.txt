@@ -1,0 +1,82 @@
+conda install gunicorn 
+-----------------------------------------------------
+→
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Collecting package metadata (repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - gunicorn
+
+Current channels:
+
+  - https://repo.anaconda.com/pkgs/main/win-64
+  - https://repo.anaconda.com/pkgs/main/noarch
+  - https://repo.anaconda.com/pkgs/r/win-64
+  - https://repo.anaconda.com/pkgs/r/noarch
+  - https://repo.anaconda.com/pkgs/msys2/win-64
+  - https://repo.anaconda.com/pkgs/msys2/noarch
+  - https://conda.anaconda.org/conda-forge/win-64
+  - https://conda.anaconda.org/conda-forge/noarch
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+-----------------------------------------------------
+上記公式で、gunicornインストール方法を確認
+https://anaconda.org/conda-forge/gunicorn
+
+-----------------------------------------------------
+↑の公式からインストールしても、結果は同じ
+conda install -c conda-forge gunicorn
+
+-----------------------------------------------------
+このエラーのときに、
+
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+
+下記を試すといいとあり、試したがだめ
+
+①conda update conda
+②①でNGの場合
+　conda config --append channels conda-forge
+
+-----------------------------------------------------
+
+①のときに、下記エラー
+
+PackageNotInstalledError: Package is not installed in prefix.
+  prefix: C:\Users\2nb23\anaconda3\envs\flask
+  package name: conda
+
+-----------------------------------------------------
+↑はカスタム環境にcondaインフラストラクチャがないため？
+baseで環境更新するために以下実行
+
+conda update   --name base  conda
+
+↓
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+# All requested packages already installed.
+
+-----------------------------------------------------
+↑入ってるぽい
+もう一度gunicorn
+
+conda install -c conda-forge gunicorn
+
+
+　→結果同じ
+
+-----------------------------------------------------
+
+flaskを再度作成してもだめ
+わからない..

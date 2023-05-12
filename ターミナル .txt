@@ -1,0 +1,193 @@
+(base) PS C:\Users\2nb23\Desktop\VSCode> C:/Users/2nb23/anaconda3/Scripts/activate
+(base) PS C:\Users\2nb23\Desktop\VSCode> conda activate base
+(base) PS C:\Users\2nb23\Desktop\VSCode> conda create -n flask python=3.9
+Retrieving notices: ...working... done
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.1.0
+  latest version: 23.3.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=23.3.1
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\2nb23\anaconda3\envs\flask
+
+  added / updated specs:
+    - python=3.9
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2023.01.10 |       haa95532_0         121 KB     
+    openssl-1.1.1t             |       h2bbff1b_0         5.5 MB     
+    pip-23.0.1                 |   py39haa95532_0         2.7 MB     
+    python-3.9.16              |       h6244533_2        19.5 MB     
+    setuptools-66.0.0          |   py39haa95532_0         1.2 MB     
+    sqlite-3.41.2              |       h2bbff1b_0         894 KB     
+    tzdata-2023c               |       h04d1e81_0         116 KB     
+    wheel-0.38.4               |   py39haa95532_0          83 KB     
+    ------------------------------------------------------------     
+                                           Total:        30.0 MB     
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/win-64::ca-certificates-2023.01.10-haa95532_0
+  openssl            pkgs/main/win-64::openssl-1.1.1t-h2bbff1b_0     
+  pip                pkgs/main/win-64::pip-23.0.1-py39haa95532_0     
+  python             pkgs/main/win-64::python-3.9.16-h6244533_2      
+  setuptools         pkgs/main/win-64::setuptools-66.0.0-py39haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.41.2-h2bbff1b_0      
+  tzdata             pkgs/main/noarch::tzdata-2023c-h04d1e81_0       
+  vc                 pkgs/main/win-64::vc-14.2-h21ff451_1
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.27.29016-h5e58377_2
+  wheel              pkgs/main/win-64::wheel-0.38.4-py39haa95532_0   
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+ca-certificates-2023 | 121 KB    | ######################### | 100%      
+sqlite-3.41.2        | 894 KB    | ######################### | 100%      
+tzdata-2023c         | 116 KB    | ######################### | 100%      
+wheel-0.38.4         | 83 KB     | ######################### | 100%      
+openssl-1.1.1t       | 5.5 MB    | ######################### | 100%      
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate flask
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) PS C:\Users\2nb23\Desktop\VSCode> conda activate flask
+(flask) PS C:\Users\2nb23\Desktop\VSCode> conda install flask
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.1.0
+  latest version: 23.3.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use    
+
+     conda install conda=23.3.1
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\2nb23\anaconda3\envs\flask
+
+  added / updated specs:
+    - flask
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    colorama-0.4.6             |   py39haa95532_0          32 KB
+    flask-2.2.2                |   py39haa95532_0         165 KB
+    importlib-metadata-6.0.0   |   py39haa95532_0          39 KB
+    jinja2-3.1.2               |   py39haa95532_0         211 KB
+    markupsafe-2.1.1           |   py39h2bbff1b_0          26 KB
+    werkzeug-2.2.3             |   py39haa95532_0         341 KB
+    zipp-3.11.0                |   py39haa95532_0          20 KB
+    ------------------------------------------------------------
+                                           Total:         835 KB
+
+The following NEW packages will be INSTALLED:
+
+  click              pkgs/main/win-64::click-8.0.4-py39haa95532_0        
+  colorama           pkgs/main/win-64::colorama-0.4.6-py39haa95532_0     
+  flask              pkgs/main/win-64::flask-2.2.2-py39haa95532_0        
+  importlib-metadata pkgs/main/win-64::importlib-metadata-6.0.0-py39haa95532_0
+  itsdangerous       pkgs/main/noarch::itsdangerous-2.0.1-pyhd3eb1b0_0   
+  jinja2             pkgs/main/win-64::jinja2-3.1.2-py39haa95532_0       
+done
+(flask) PS C:\Users\2nb23\Desktop\VSCode> python
+Python 3.9.16 (main, Mar  8 2023, 10:39:24) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.   
+>>> import flask
+>>> ^D
+  File "<stdin>", line 1
+    
+    ^
+SyntaxError: invalid syntax
+>>> exit()
+(flask) PS C:\Users\2nb23\Desktop\VSCode> python sample.py
+C:\Users\2nb23\anaconda3\envs\flask\python.exe: can't open file 'C:\Users\2nb23\Desktop\VSCode\sample.py': [Errno 2] No such file or directory
+(flask) PS C:\Users\2nb23\Desktop\VSCode> python \Flask_app\sample.py
+C:\Users\2nb23\anaconda3\envs\flask\python.exe: can't open file 'C:\Flask_app\sample.py': [Errno 2] No such file or directory
+(flask) PS C:\Users\2nb23\Desktop\VSCode> python C:\VSCode\Flask_app\sample.py
+C:\Users\2nb23\anaconda3\envs\flask\python.exe: can't open file 'C:\VSCode\Flask_app\sample.py': [Errno 2] No such file or directory
+(flask) PS C:\Users\2nb23\Desktop\VSCode> python C:\Users\2nb23\Desktop\VSCode\Flask_app\sample.py
+ * Serving Flask app 'sample'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [11/May/2023 21:05:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/May/2023 21:05:09] "GET /favicon.ico HTTP/1.1" 404 -   
+(flask) PS C:\Users\2nb23\Desktop\VSCode> python C:\Users\2nb23\Desktop\VSCode\Flask_app\sample.py
+ * Serving Flask app 'sample'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [11/May/2023 21:14:31] "GET / HTTP/1.1" 200 -
+(flask) PS C:\Users\2nb23\Desktop\VSCode> python C:\Users\2nb23\Desktop\VSCode\Flask_app\sample.py
+ * Serving Flask app 'sample'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [11/May/2023 21:16:09] "GET / HTTP/1.1" 200 -
+(flask) PS C:\Users\2nb23\Desktop\VSCode> python sample.py
+C:\Users\2nb23\anaconda3\envs\flask\python.exe: can't open file 'C:\Users\2nb23\Desktop\VSCode\sample.py': [Errno 2] No such file or directory    
+(flask) PS C:\Users\2nb23\Desktop\VSCode> cd C:\Users\2nb23\Desktop\
+(flask) PS C:\Users\2nb23\Desktop> python sample.py
+C:\Users\2nb23\anaconda3\envs\flask\python.exe: can't open file 'C:\Users\2nb23\Desktop\sample.py': [Errno 2] No such file or directory
+(flask) PS C:\Users\2nb23\Desktop> cd C:\Users\2nb23\Desktop\Flask_app
+(flask) PS C:\Users\2nb23\Desktop\Flask_app> python sample.py
+ * Serving Flask app 'sample'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [11/May/2023 21:23:40] "GET / HTTP/1.1" 200 -
+(flask) PS C:\Users\2nb23\Desktop\Flask_app> python view.py4
+C:\Users\2nb23\anaconda3\envs\flask\python.exe: can't open file 'C:\Users\2nb23\Desktop\Flask_app\view.py4': [Errno 2] No such file or directory  
+(flask) PS C:\Users\2nb23\Desktop\Flask_app> python view.py
+ * Serving Flask app 'view'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [11/May/2023 21:26:25] "GET / HTTP/1.1" 200 -
+(flask) PS C:\Users\2nb23\Desktop\Flask_app> 
